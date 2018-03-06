@@ -69,6 +69,7 @@
 [ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 833[D:\www\zwadmin\thinkcms\library\minify\HtmlMinify.php:21]
 [ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 836[D:\www\zwadmin\thinkcms\library\minify\HtmlMinify.php:21]
 [ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 841[D:\www\zwadmin\thinkcms\library\minify\HtmlMinify.php:21]
+<<<<<<< HEAD
 ---------------------------------------------------------------
 [ 2018-03-05T14:53:08+08:00 ] ::1 ::1 GET /advance_dabao/zwadmin/public/
 [ info ] localhost/advance_dabao/zwadmin/public/ [运行时间：0.140516s][吞吐率：7.12req/s] [内存消耗：3,046.72kb] [文件加载：61]
@@ -8822,3 +8823,5 @@
 [ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1142[D:\wmPhp\wamp\www\advance_dabao\zwadmin\thinkcms\library\minify\HtmlMinify.php:21]
 [ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1145[D:\wmPhp\wamp\www\advance_dabao\zwadmin\thinkcms\library\minify\HtmlMinify.php:21]
 [ error ] [2]DOMDocument::loadHTML(): Unexpected end tag : span in Entity, line: 1150[D:\wmPhp\wamp\www\advance_dabao\zwadmin\thinkcms\library\minify\HtmlMinify.php:21]
+=======
+>>>>>>> 7886ff9b0727a2ba5d35857273d4243d94988305

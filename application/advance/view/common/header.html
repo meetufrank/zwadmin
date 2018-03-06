@@ -18,11 +18,16 @@
        {/if}
       <ul class="menu-wrapper clearfix">
          {volist name="service_list" id="sl"}
+<<<<<<< HEAD
          {in name="$sl.id" value="1"}
          <li class="menubar menubar-{$sl.id}"><a href="{:url('/Allianz/EMO/services/'.$sl.id)}"><span class="bar-background"></span><span class="bar-text">{$sl.typename}</span><span class="bottom-gradient"></span></a><span class="right-gradient"></span></li>
 
          {/in}
          {/volist}
+=======
+         <li class="menubar menubar-{$sl.id}"><a href="{:url('/services/'.$sl.id)}"><span class="bar-background"></span><span class="bar-text">{$sl.typename}</span><span class="bottom-gradient"></span></a><span class="right-gradient"></span></li>
+        {/volist}
+>>>>>>> 7886ff9b0727a2ba5d35857273d4243d94988305
 
       </ul>
     </div>
@@ -46,7 +51,11 @@
       <div class="flex-mask">
         <div class="diagnose logvilad" >
           <div class="image-wrapper"><img src="{$static_path}/advance/img/diagnose.png" alt=""></div>
+<<<<<<< HEAD
           <div class="diagnose-text">开始</div>
+=======
+          <div class="diagnose-text">一键咨询</div>
+>>>>>>> 7886ff9b0727a2ba5d35857273d4243d94988305
         </div>
         <div class="flex-phone-wrapper">
           <span>400&#45;920&#45;2069</span>
@@ -60,5 +69,9 @@
       </div>
     </div>
     <div class="mobile-diagnose logvilad">
+<<<<<<< HEAD
       <div class="diagnose-text">开始</div>
+=======
+      <div class="diagnose-text">一键咨询</div>
+>>>>>>> 7886ff9b0727a2ba5d35857273d4243d94988305
     </div>
