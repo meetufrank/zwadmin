@@ -26,6 +26,7 @@ return [
 
     
 
+
     // 'Allianz/EMO/services/:id'=>'emo/Index/service_details',
     // 'Allianz/EMO/mobile_form/:id'=>'emo/Index/mobile_form',
     //  'Allianz/EMO'=>'emo/Index/service_details',
@@ -34,6 +35,7 @@ return [
    'services/:id'=>'advance/Index/service_details',
    'mobile_form/:id'=>'advance/Index/mobile_form',
 
+
     'Allianz/EMO/services/:id'=>'advance/Index/service_details',
     'Allianz/EMO/mobile_form/:id'=>'advance/Index/mobile_form',
      'Allianz/EMO'=>'advance/Index/service_details',
@@ -41,6 +43,7 @@ return [
         'Allianz'=>'advance/Index/service_details',
 //    'services/:id'=>'advance/Index/service_details',
 //    'mobile_form/:id'=>'advance/Index/mobile_form',
+
 
 
 ];
