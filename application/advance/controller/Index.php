@@ -118,7 +118,12 @@ class Index extends Controller
      */
     public function service_details($id=1)
     {
- 
+        $arr=explode(',','1');
+        
+       if(!in_array($id, $arr)){
+           $id=1;
+       }
+      
        $this->assign('service_id', $id);
         
         return $this->fetch();
