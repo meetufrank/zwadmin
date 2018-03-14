@@ -62,10 +62,10 @@
 }
 
 .expert-section span.title {
-    color: #017f4f;
- /*   background-color: #017f4f;*/
+    color: #fff;
+    background-color: #017f4f;
     font-weight: 400
-    font-size: 2.8rem;
+    font-size: 1.6rem;
 }
 
 @media (max-width:767px) {
@@ -76,7 +76,7 @@
         display: inline-block;
         width: auto;
         padding: 8px 12px;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         letter-spacing: 1px
     }
     .moble_centent_left{
@@ -108,7 +108,7 @@
         display: inline-block;
         width: auto;
         padding: 10px 15px;
-        font-size: 1.8em;
+        font-size: 1em;
         letter-spacing: 2px
     }
 }
@@ -116,7 +116,7 @@
 @media (min-width:993px) {
     .expert-section span.title {
         padding: 20px 25px;
-        font-size: 2.4em;
+        font-size: 1.4em;
         letter-spacing: 3px
     }
 }
@@ -160,7 +160,7 @@
 @media (min-width:768px) {
     .expert-sub {
         margin-top: 60px;
-        /*border-top: 3px solid #017f4f;*/
+        border-top: 3px solid #017f4f;
         text-align: center
     }
     .expert-sub h3 {

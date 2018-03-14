@@ -123,7 +123,7 @@ $(function() {
         $(".form-inner-wrapper").addClass("form-show-expert"),
         $("#form-type").val(1),
         $(".optional-checkbox").css("display", "block"),
-        $(".change-label").text("请简要说明您的病情，并描述你想要从医疗专家意见书中得知什么")
+        $(".change-label").text("请简要说明您的病情，并描述您想从专医疗专家意见中获得的信息")
     }),
     $(".btn-health").click(function() {
         
