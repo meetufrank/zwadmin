@@ -9,6 +9,9 @@
 .menu-wrapper a {
     text-decoration: none
 }
+.bottom-nav-wrapper,.medical-footer{
+    margin:0 -35%;
+}
 
 body {
     overflow-x: hidden;
