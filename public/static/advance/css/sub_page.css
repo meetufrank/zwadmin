@@ -1696,7 +1696,7 @@
         position: relative
     }
     .diagnose-process-wrapper2 .step-wrapper {
-        height: 180px;
+        height: 200px;
         background-color: #017f4f
     }
     .diagnose-process-wrapper2 .step-wrapper2 {
@@ -1708,6 +1708,7 @@
         padding-left:10px;
         font-weight:700;
     }
+   
     .diagnose-step-text .step-text{
         padding-left:10px;
     }
