@@ -121,4 +121,60 @@ class Login extends Controller
 
             $this->success('退出成功',$url,'',2);
     }
+    
+    
+   /*
+    * 注册接口
+    */
+    public function register_user(){
+        if(request()->isPost()){
+            
+      
+        //再次验证是否通过
+        $count=$this->valid();
+        if($count){
+          
+        }else{
+             echo 'faild';
+        }
+      }else{
+          
+          return $this->fetch();
+      }
+    }
+    
+    /*
+     * 保险用户验证
+     */
+    public function valid_user(){
+        
+        $count=$this->valid();
+        if($count){
+            echo 'success';
+        }else{
+            echo 'faild';
+        }
+    }
+    
+    protected function valid() {
+        $nickname='测试';
+        $tel='1111';
+        $email='65464@qq.com';
+        $policy='1231231231231';
+        $data=[
+           'name'=>$nickname,
+            'tel'=>$tel,
+            'email'=>$email,
+            'policy'=>$policy,
+        ];
+        $where=[
+            'name'=>$data['name'],
+            'tel'=>$data['tel'],
+            'email'=>$data['email'],
+            'policy'=>$data['policy'],
+            'status'=>0
+        ];
+        $count=db('cases_chatuser_bx')->where($where)->count();
+        return $count;
+    }
 }

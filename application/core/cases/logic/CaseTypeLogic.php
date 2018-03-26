@@ -64,7 +64,7 @@ class CaseTypeLogic extends Logic
            ];
            foreach ($data as $key => $value) {
                $list[]=[
-                 'name'=>$value['ename'],
+                 'name'=>$value['name'],
                  'value'=>$value['id']
                ];
            }
