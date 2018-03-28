@@ -124,7 +124,7 @@ body {
         width: 200px
     }
     .logo-wrapper .logo2 {
-        width: 50px
+        width: 200px
     }
 }
 
@@ -136,7 +136,7 @@ body {
         width: 238px
     }
     .logo-wrapper .logo2 {
-        width: 60px
+        width: 120px
     }
 }
 
@@ -148,7 +148,7 @@ body {
         width: 238px
     }
     .logo-wrapper .logo2 {
-        width: 70px
+        width: 160px
     }
 }
 
@@ -251,10 +251,10 @@ body {
         width: 65px;
         margin-right: -65px
     }
-    .menu-wrapper .menubar-1 {
+    /*.menu-wrapper .menubar-1 {
 
         border-right: 65px solid #017f4f
-    }
+    }*/
     .menu-wrapper .menubar-1 .right-gradient {
         background: #017f4f;
         background: -moz-linear-gradient(left, #017f4f 0, #52cc9d 100%);
@@ -275,9 +275,9 @@ body {
         background: -webkit-linear-gradient(left, #52cc9d 0, #017f4f 100%);
         background: linear-gradient(to right, #52cc9d 0, #017f4f 100%)
     }
-    .menu-wrapper .menubar-2 {
+    /*.menu-wrapper .menubar-2 {
         border-right: 65px solid #0775aa
-    }
+    }*/
     .menu-wrapper .menubar-2 .right-gradient {
         background: #0775aa;
         background: -moz-linear-gradient(left, #0775aa 0, #1ba9f5 100%);
@@ -296,9 +296,9 @@ body {
         background: -webkit-linear-gradient(left, #1ba9f5 0, #0775aa 100%);
         background: linear-gradient(to right, #1ba9f5 0, #0775aa 100%)
     }
-    .menu-wrapper .menubar-3 {
+    /*.menu-wrapper .menubar-3 {
         border-right: 65px solid #9d3373
-    }
+    }*/
     .menu-wrapper .menubar-3 .right-gradient {
         background: #9d3373;
         background: -moz-linear-gradient(left, #9d3373 0, #e645a5 100%);
@@ -317,9 +317,9 @@ body {
         background: -webkit-linear-gradient(left, #e645a5 0, #9d3373 100%);
         background: linear-gradient(to right, #e645a5 0, #9d3373 100%)
     }
-    .menu-wrapper .menubar-4 {
+    /*.menu-wrapper .menubar-4 {
         border-right: 65px solid #563e96
-    }
+    }*/
     .menu-wrapper .menubar-4 .right-gradient {
         background: #563e96;
         background: -moz-linear-gradient(left, #563e96 0, #8b5ef5 100%);

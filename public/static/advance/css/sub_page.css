@@ -29,6 +29,12 @@
 .moble_border_bottom{
         display:inline-block;width:50px; height:20px;background:#52cc9d;margin-left:20px;
     }
+.expert-info-wrapper span{
+    color:#000 !important;
+}
+.expert-main-example .expert-info-wrapper span.expert-info{
+    font-weight: 700;
+}    
 @media (min-width:768px) {
     .expert-opinion-wrapper {
         margin-top: 30px;
@@ -291,9 +297,15 @@
 }
 
 @media (max-width:767px) {
-    .expert-main-example {
-        display: none
+    
+    .logo-wrapper .logo1{
+        height:60px;
+        margin-top: 0;
     }
+    .logo-wrapper .logo1>img{
+        height:100%;
+    }
+    
 }
 
 @media (min-width:768px) {
@@ -334,14 +346,17 @@
     .expert-main-example .expert-info-wrapper span {
         font-size: 1.4em
     }
+    .expert-example-wrapper .expert-details .text-center{
+        font-size:1.4em;
+    }
     .expert-main-example .expert-info-wrapper span.expert-remark-1 {
-        margin-bottom: 5px
+        margin-bottom: 10px;
     }
     .expert-main-example .expert-info-wrapper span.expert-remark-2 {
         margin-bottom: 20px
     }
     .expert-main-example .expert-info-wrapper span.expert-info {
-        margin-bottom: 3px
+        margin-bottom: 10px
     }
 }
 
@@ -352,14 +367,17 @@
     .expert-main-example .expert-info-wrapper span {
         font-size: 1.6em
     }
+    .expert-example-wrapper .expert-details .text-center{
+        font-size:1.2em;
+    }
     .expert-main-example .expert-info-wrapper span.expert-remark-1 {
-        margin-bottom: 5px
+        margin-bottom: 15px
     }
     .expert-main-example .expert-info-wrapper span.expert-remark-2 {
         margin-bottom: 20px
     }
     .expert-main-example .expert-info-wrapper span.expert-info {
-        margin-bottom: 3px
+        margin-bottom: 15px
     }
 }
 
@@ -447,7 +465,7 @@
         font-size: 1.4em
     }
     .expert-example-wrapper .image-wrapper {
-        width: 50%;
+        width: 40%;
         margin: 50px auto 0;
         border-radius: 50%;
         overflow: hidden;
@@ -550,7 +568,7 @@
         font-size: 1.2em
     }
     .expert-example-wrapper .image-wrapper {
-        width: 70%
+        width: 50%
     }
     .expert-example-wrapper .expert-details {
         height: 320px;
@@ -585,7 +603,7 @@
         font-size: 1.4em
     }
     .expert-example-wrapper .image-wrapper {
-        width: 70%
+        width: 60%
     }
     .expert-example-wrapper .expert-details {
         text-align: center;
@@ -1696,7 +1714,7 @@
         position: relative
     }
     .diagnose-process-wrapper2 .step-wrapper {
-        height: 200px;
+        height: 210px;
         background-color: #017f4f
     }
     .diagnose-process-wrapper2 .step-wrapper2 {
@@ -1763,7 +1781,7 @@
         position: relative
     }
     .diagnose-process-wrapper2 .step-wrapper {
-        height: 180px;
+        height: 210px;
         background-color: #017f4f
     }
     .diagnose-process-wrapper2 .step-wrapper2 {
