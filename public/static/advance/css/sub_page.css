@@ -343,6 +343,9 @@
     .expert-main-example .expert-info-wrapper span.expert-info {
         margin-bottom: 3px
     }
+    .expert-example-wrapper .expert-details .text-center{
+        font-size:1.4em;
+    }
 }
 
 @media (min-width:1200px) {
@@ -361,12 +364,18 @@
     .expert-main-example .expert-info-wrapper span.expert-info {
         margin-bottom: 3px
     }
+    .expert-example-wrapper .expert-details .text-center{
+        font-size:1.2em;
+    }
 }
 
 @media (min-width:1439px) {
     .expert-main-example {
         margin-top: 50px;
         margin-bottom: 120px
+    }
+    .expert-example-wrapper .expert-details .text-center{
+        font-size:1.4em;
     }
 }
 
@@ -596,13 +605,13 @@
     }
     .expert-example-wrapper .expert-name {
         font-size: 1.4em;
-        padding: 10px 5px
+        padding: 5px
     }
     .expert-example-wrapper .expert-info {
         font-size: 1.4em;
         letter-spacing: 0;
         text-align: center;
-        padding: 0 10px 15px
+        padding:5px 10px 5px
     }
     .expert-example-wrapper .expert-info>span {
         margin-bottom: 2px
