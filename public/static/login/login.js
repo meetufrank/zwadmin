@@ -251,14 +251,11 @@ $(function () {
         console.log(Forms);
         if(valid && !name(Forms.username)){
             valid = false;
-            $("#username").css('border','1px solid red');
             $("#username").focus();
         }else{
-            $("#username").css('border','1px solid transparent');
         }
         if(valid && !checkMobile(Forms.tel) ){
             valid = false;
-            $("#tel").css('border','1px solid red');
             $("#tel").focus();
 
 
@@ -269,19 +266,17 @@ $(function () {
         if(valid && Forms.email.length>0){
             if(!email(Forms.email)){
                 valid = false;
-                $("#email").css('border','1px solid red');
                 $("#email").focus();
             }else{
-                $("#email").css('border','1px solid #6aaaf2');
+                $("#tel").css('border','1px solid transparent');
             }
            
         }else{
-             $("#email").css('border','1px solid #6aaaf2');
+             $("#tel").css('border','1px solid transparent');
         }
 
         if(valid && !OrdersTwo(Forms.Orders)){
             valid = false;
-            $("#Orders").css('border','1px solid red');
             $("#Orders").focus();
         }else{
             $("#Orders").css('border','1px solid transparent');
@@ -484,7 +479,6 @@ $(function () {
         };
         if( vaild && Forms.V_input.length <= 0 ){
             vaild = false;
-            $(".idcard .main_item .V_input").css('border','1px solid red');
             $(".idcard .main_item .V_input").focus();
         }else{
             $(".idcard .main_item .V_input").css('border','1px solid transparent');
@@ -572,14 +566,12 @@ $(function () {
         }
         if(valid && Forms.usernameTwo.length <= 3){
             valid = false;
-            $("#usernameTwo").css('border','1px solid red');
             $("#usernameTwo").focus();
         }else{
             $("#usernameTwo").css('borderColor','transparent');
         }
         if(valid && Forms.sex <=0 ){
             valid = false;
-            $("#sexM").css('border','1px solid red');
             $("select").focus();
         }else{
             $("#sexM").css('borderColor','transparent');

@@ -402,7 +402,7 @@ option{
 	.modal_bottom_text span{
 		display: inline-block;
 		color:#fff;
-		padding:80px;
+		padding:80px 0;
 	}
 
 
