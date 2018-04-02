@@ -152,6 +152,8 @@ class Login extends Controller
             ];
            if(input('post.sexM')!=1){
                $data['sex']=0;
+           }else{
+               $data['sex']=1;
            }
             if(empty($data['avatar'])){
                 if($data['sex']){

@@ -671,7 +671,7 @@ $("#Verification").click(function(){
        
     // });
 
-console.log($("#sex").val());
+//console.log($("#sex").val());
 // sex
 
     
