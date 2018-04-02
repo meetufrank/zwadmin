@@ -49,7 +49,7 @@ li{
 	background:#fff;
 	
 }
-.Review,.Application,.idcard,.login{
+.Application,.idcard,.login{
 	position: absolute;
 	top:0;
 	left:0;
@@ -262,6 +262,14 @@ option{
     color: #fff;
 }
 
+@media screen and (min-width: 900px) and (max-width: 1367px) {
+
+    .content{
+    	height:1000px;
+    	background-color: red;
+    }
+}
+
 @media screen and (max-width: 900px){
 	.content{
 		position: static;
@@ -410,3 +418,5 @@ option{
 
 
 }
+
+
