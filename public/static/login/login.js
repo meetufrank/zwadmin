@@ -621,7 +621,7 @@ $(function () {
         }
 //        document.getElementById("Verification").onclick=function(){time(this);}
 $("#Verification").click(function(){
-           
+           $("#Verification").css('width','80px;');
           var verifi=this;
           
            $.ajax({

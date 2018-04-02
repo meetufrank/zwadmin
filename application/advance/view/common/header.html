@@ -7,13 +7,7 @@
           <div class="loader-img"></div>
       </div>
     </section>
-    <div style="width:100%;height:35px;">
-         {if condition="$userid neq 0"}
-          <a style=" float: right;margin-top:0;margin-right: 50px;line-height: 35px;" class="login-wrapper" href="{:url('Login/logout')}">{$minedata.user_name|mb_substr=###,0,4,'utf-8'},退出</a>
-           {else/}
-            <a style="float: right;margin-top:0;margin-right: 50px;line-height: 35px;" class="login-wrapper" href="{:url('Login/index')}">登录</a>
-           {/if}
-    </div>
+    
     <div class="top-nav clearfix">
       
       <a class="logo-wrapper" href="{:url('/Allianz')}">
@@ -25,7 +19,14 @@
        {else/}
         <a class="login-wrapper" href="{:url('Login/index')}">登录</a>
        {/if} -->
-      <ul class="menu-wrapper clearfix">
+       <div style="width:100%;height:35px;">
+         {if condition="$userid neq 0"}
+          <a style=" float: right;margin-top:0;margin-right: 50px;line-height: 35px;" class="login-wrapper" href="{:url('Login/logout')}">{$minedata.user_name|mb_substr=###,0,4,'utf-8'},退出</a>
+           {else/}
+            <a style="float: right;margin:0;line-height: 35px;" class="login-wrapper" href="{:url('Login/index')}">登录</a>
+           {/if}
+    </div>
+      <ul class="menu-wrapper clearfix" style="margin-top: 55px;">
          {volist name="service_list" id="sl"}
          {in name="$sl.id" value="1"}
          <li class="menubar menubar-{$sl.id}"><a href="{:url('/Allianz/EMO/services/'.$sl.id)}"><span class="bar-background"></span><span class="bar-text">{$sl.typename}</span><span class="bottom-gradient"></span></a><span class="right-gradient"></span></li>
@@ -35,6 +36,7 @@
 
       </ul>
     </div>
+    
     <div class="flex-container-outer-wrapper">
     <div class="flex-container-wrapper mb--l">
       <div class="flex-container">

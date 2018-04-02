@@ -34,8 +34,7 @@ li{
 	height: 100%;
 	position: relative;
 	overflow: hidden;
-
-	background:url("2.png")no-repeat center;
+	background:url("5.png")no-repeat center;
 
 }
 .information{
@@ -50,13 +49,15 @@ li{
 	
 }
 .Application,.idcard,.login{
+	display: none;
 	position: absolute;
 	top:0;
 	left:0;
 	right: 0;
 	bottom: 0;
-	overflow: hidden;
-	display: none;
+	height:620px;
+	
+	
 }
 .Review{
 	display: block;
@@ -110,6 +111,7 @@ li{
 	display: flex;
 	background-color: #e1edff;
 	flex-direction: column;
+	overflow: hidden;
 }
 .information .main_right.min{
 	height:750px;
@@ -148,7 +150,7 @@ li{
 }
 
 .main_item input{
-	width:90%;
+	width:100%;
 	margin:auto;
 	height:100%;
 	border:1px solid #6aaaf2;
@@ -169,7 +171,7 @@ li{
 }
 .main_item button{
 	display: block;
-	width: 90%;
+	width: 100%;
 	height:60px;
 	border-radius: 45px;
 	margin-top:40px;
@@ -224,6 +226,7 @@ li{
 select{
 	position:absolute;
 	width:90%;
+	top:0;
 	left:0;
 	height:60px;
 	border:none;
@@ -266,7 +269,7 @@ option{
 
     .content{
     	height:1000px;
-    	background-color: red;
+    	
     }
 }
 
@@ -287,6 +290,7 @@ option{
 	.Review,.Application,.idcard,.login{
 		position:static;
 		height:auto;
+		overflow: hidden;
 	}
 	.modal_img{
 		width: 60%;
@@ -331,6 +335,9 @@ option{
 		font-size: 20px;
 		margin-top:20px;
 		color:#fff;
+	}
+	.promptMax{
+		display:none;
 	}
 	.main{
 		border-radius: 8px;
