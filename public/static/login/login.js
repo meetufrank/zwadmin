@@ -23,6 +23,7 @@ $(function () {
         }else{
             $("#username").css('border','1px solid #6aaaf2');
         }
+
         if(valid && !checkMobile(Forms.tel)){
             valid = false;
             $("#tel").css('borderColor','red');
@@ -33,6 +34,7 @@ $(function () {
         }else{
             $("#tel").css('border','1px solid #6aaaf2');
         }
+        
         if(valid && Forms.email.length>0){
             if(!email(Forms.email)){
                 valid = false;
