@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>注册</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
@@ -42,21 +42,23 @@
                   <span>首次登录请提交您的信息,确认成功后即可登录</span>
                 </div>
                 <div class="main_item ">
-                  <input id="username" type="text" name="username" value="" placeholder="请输入账号">
-                  <i class="icon iconfont icon-yonghu"></i>
+                  <input id="username" type="text" name="username" value="" placeholder="请输入姓名(必填项)">
+                  <i class="icon iconfont icon-yonghu"><span style="color:red;">*</span></i>
                 </div> 
                 <div class="main_item">
-                  <input id="tel" type="text" name="tel"   placeholder="请输入手机号">
-                  <i class="icon iconfont icon-shouji"></i>
+                  <input id="tel" type="text" name="tel"   placeholder="请输入手机号(必填项)">
+                  <i class="icon iconfont icon-shouji"><span style="color:red;">*</span></i>
                 </div>
-                <div class="main_item">
-                  <input id="email" type="email" name="email"   placeholder="请输入邮箱">
+                 <div class="main_item">
+                  <input id="email" type="email" name="email"   placeholder="请输入邮箱(选填)">
                   <i class="icon iconfont icon-tubiao209"></i>
                 </div>
                 <div class="main_item">
-                  <input id="Orders" type="text" name="Orders"  placeholder="请输入保单号">
-                  <i class="icon iconfont icon-biaodan"></i>
+                  <input id="Orders" type="text" name="Orders"  placeholder="请输入身份证/证件(必填项)">
+                  <i class="icon iconfont icon-biaodan"><span style="color:red;">*</span></i>
                 </div>
+               
+                
                 <div class="main_item confirm">
                   <button class="determine" type="button">确认</button>
                 </div>
@@ -68,7 +70,7 @@
 
               <!-- logo -->
               <div class="main_right">
-                <div class="main_item_top"><img src=" 1.png" alt="" /></div>
+                <div class="main_item_top"><img src=" 1.png" alt=""/></div>
                 <div class="main_right_item">
                   <div class="main_cent"><img src="logo.png" alt="" width="100%;" height="100%;" /></div>
                 </div>
@@ -114,11 +116,11 @@
                 <!-- 用户名/性别 -->
                 <div class="main_item">
                   <input id="usernameTwo" type="text" name="usernameTwo" value="" placeholder="请输入用户名">
-                  <i class="icon iconfont icon-yonghu"></i>
+                  <i class="icon iconfont icon-yonghu"><span style="color:red;">*</span></i>
                 </div>  
                 <div class="main_item">
                   <input id="sexM" type="" name="sexM" value="" >
-                  <i class="icon iconfont icon-tijianxingbiefenxi"></i>
+                  <i class="icon iconfont icon-tijianxingbiefenxi"><span style="color:red;">*</span></i>
                   <select id="sex" >
                     <option class="sex"  value="0">请选择性别</option>
                     <option class="sex" value="1">男</option>
@@ -148,7 +150,7 @@
             <div class="modal_bottom">
               <div class="prompt"><span >密码请妥善保管，如忘记密码。请联系我们：40000000</span></div>
               <div class="modal_btn">
-                <button type="sublim">下一步</button>
+                <button type="button">下一步</button>
               </div>
             </div>
             <!-- 手机端下一步 -->
@@ -172,7 +174,7 @@
             <div class="main">
               <div class="main_left">
                 <!-- pc 标题 -->
-                <div class="title min" ><span >身份验证</span><span class="shadow"></span></div>
+                <div class="title min"><span >身份验证</span><span class="shadow"></span></div>
                 <!-- pc 标题 -->
                 <div class="main_text" style="text-align: justify;padding-left:90px;"><span>请您进行身份验证</span> </div>
                 <div class="main_item min">
@@ -182,7 +184,7 @@
                     <input class="V_input" type="text" value="" placeholder="请输入验证码">
                     <!--<span class="Verification"> 获取验证码</span>-->
                     <input type="button" id="Verification" value="获取验证码" />
-                    <i class="icon iconfont icon-dunpai1"></i>
+                    <i class="icon iconfont icon-dunpai1"><span style="color:red;">*</span></i>
                 </div>
                 
                 <div class="main_item confirm">
@@ -201,7 +203,7 @@
             <div class="modal_bottom">
               <div class="prompt"><span >密码请妥善保管，如忘记密码。请联系我们：40000000</span></div>
               <div class="modal_btn">
-                <button type="sublim">下一步</button>
+                <button type="button">下一步</button>
               </div>
             </div>
           </div>
@@ -229,10 +231,13 @@
 
                         <!-- 用户名 -->
                         <div class="main_item">
-                            <label>用户名:</label><p style="display: inline-block;text-indent:60px;font-size: 24px">Hi windows</p>
+                            <input id="passwordOne" type="password" value="" placeholder="请输入密码">
+                           
+                            <i class="icon iconfont icon-mima"><span style="color:red;">*</span></i>
                         </div>
-                        <div class="main_item min">
-                            <label>密码:</label><p style="display: inline-block;text-indent: 75px;font-size: 24px;color:red;">我的密码</p>
+                        <div class="main_item">
+                            <input id="passwordTwo" type="password" value="" placeholder="请确认密码">
+                            <i class="icon iconfont icon-mima"><span style="color:red;">*</span></i>
                         </div>
                         <!-- 用户名 -->
                         <!-- 密码 -->
@@ -256,7 +261,7 @@
                 <div class="modal_bottom">
                     <div class="prompt"><span >密码请妥善保管，如忘记密码。请联系我们：40000000</span></div>
                     <div class="modal_btn">
-                        <button type="sublim">登录</button>
+                        <button type="button">登录</button>
                     </div>
                 </div>
                 <!-- 手机端下一步 -->
@@ -270,8 +275,8 @@
     </div>
 
 
-  <!--<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+<!--  <script type="text/javascript" src="jquery.js"></script> -->
     <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="login.js"></script>>
+    <script type="text/javascript" src="login.js"></script>
 </body>
 </html>
