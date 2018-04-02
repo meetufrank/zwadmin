@@ -36,10 +36,12 @@
     font-weight: 700;
 }    
 @media (min-width:768px) {
+
     .expert-opinion-wrapper {
         margin-top: 30px;
         margin-left: 30px;
         margin-right: 30px
+
     }
 }
 
@@ -75,6 +77,12 @@
 }
 
 @media (max-width:767px) {
+    .expert-opinion-wrapper .expert-main-example{
+        display: none;
+    }
+    .bottom-nav-wrapper, .medical-footer{
+        margin:0;
+    }
     .expert-section h2 {
         margin-left: 10px
     }
@@ -398,6 +406,9 @@
 }
 
 @media (max-width:767px) {
+    #page-wrapper .top-nav .menu-wrapper.clearfix{
+        margin-top: 55px !important;
+    }
     .expert-example-wrapper .expert {
         margin-top: 20px;
         margin-left: 40px;
