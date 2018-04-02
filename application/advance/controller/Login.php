@@ -198,7 +198,7 @@ class Login extends Controller
             if($data['tel']){
                 $msg=new \message\mess();
 
-                $msg->send($data['tel'], '【中德安联│汇医】尊敬的客户，恭喜您注册成功，请妥善保管您的账号和密码，您可以通过点击以下链接在线提交全球医学专家意见服务申请。链接:http://allianzchina.advance-medical.com.cn/.');
+                $msg->send($data['tel'], '【中德安联】[汇医]尊敬的客户，恭喜您注册成功，请妥善保管您的账号和密码，您可以通过点击以下链接在线提交全球医学专家意见服务申请。链接:http://allianzchina.advance-medical.com.cn/.');
             }
             echo json_encode(['code'=>1,'msg'=>'注册成功,账号密码将发送至您的邮箱和手机，请查收。']);
             exit;
@@ -344,7 +344,7 @@ class Login extends Controller
                 
                 $msg=new \message\mess();
 
-                $msg->send($tel, '【中德安联│汇医】您正在注册中德安联│汇医官网 ，注册验证码为：'.$code.'，30分钟内有效');
+                $msg->send($tel, '【中德安联】[汇医]您正在注册中德安联│汇医官网 ，注册验证码为：'.$code.'，30分钟内有效');
                 echo json_encode(['code'=>1,'msg'=>'发送成功']);
                 exit; 
                }else{
