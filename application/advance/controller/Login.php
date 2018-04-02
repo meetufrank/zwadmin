@@ -145,7 +145,7 @@ class Login extends Controller
                 'pwd' => input('post.pwd'),
                 'pwd_again'=>input('post.pwd_agnin'),
                 'nickname' => $savedata['realname'],
-                'company' => 1,
+                'company' => 9,
                 'tel' => $savedata['mobile'],
                 'email' => input('post.email'),
                  'idnumber'=> $savedata['cardId']
