@@ -524,7 +524,6 @@ $(function () {
 
 // PC --用户名/性别验证
     $(".Application .main_item button").click(function(){
-
         var valid = true;
         var Forms = {
             usernameTwo : $("#usernameTwo").val(),
@@ -553,7 +552,9 @@ $(function () {
 
             $(".login").css('display','block');
 
+            
         }else{
+            console.log("123");
             return false;
         }
 
@@ -581,6 +582,7 @@ $(function () {
         }else{
             $("#sexM").css('borderColor','transparent');
         }
+
 
         if(valid){
             $(".Application").css('display','none');
@@ -653,6 +655,24 @@ $("#Verification").click(function(){
             
 //         }
 //     });
+//     
+
+
+// sex
+    // $("#sex").change(function(){
+        
+    //     // 先清空第二个 
+    //     $(".selector2").empty(); 
+    //     // 实际的应用中，这里的option一般都是用循环生成多个了 
+    //     var option = $("<option>").val(1).text("pxx"); 
+    //     $(".selector2").append(option); 
+       
+    // });
+
+console.log($("#sex").val());
+// sex
+
+    
 
     //pc密码确认
     $(".login .main_item button").click(function(){
