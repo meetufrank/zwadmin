@@ -641,18 +641,18 @@ $("#Verification").click(function(){
 //短信60s倒计时
 
 //密码正则验证
-$("#passwordOne").focus(function(){ $("#passwordOne").css('border','1px solid red'); })
-    $("#passwordOne").blur(function(){
-        var passwordOne = $("#passwordOne").val();
-        var password =  /^[A-Za-z]+[0-9]+[A-Za-z0-9]*|[0-9]+[A-Za-z]+[A-Za-z0-9]*$/g; 
-        if(passwordOne.lenght<= 0 || !password.test(passwordOne)){
-            $("#email").css('border','1px solid red');
-        }else{
-            $("#passwordOne").css('border','1px solid #6aaaf2');
-            $("#passwordTwo").css('border','1px solid #6aaaf2');
+// $("#passwordOne").focus(function(){ $("#passwordOne").css('border','1px solid red'); })
+//     $("#passwordOne").blur(function(){
+//         var passwordOne = $("#passwordOne").val();
+//         var password =  /^[A-Za-z]+[0-9]+[A-Za-z0-9]*|[0-9]+[A-Za-z]+[A-Za-z0-9]*$/g; 
+//         if(passwordOne.lenght<= 0 || !password.test(passwordOne)){
+//             $("#email").css('border','1px solid red');
+//         }else{
+//             $("#passwordOne").css('border','1px solid #6aaaf2');
+//             $("#passwordTwo").css('border','1px solid #6aaaf2');
             
-        }
-    });
+//         }
+//     });
 
     //pc密码确认
     $(".login .main_item button").click(function(){
