@@ -436,36 +436,35 @@ $(function () {
             $(".idcard .main_item .V_input").css('border','1px solid #6aaaf2');
         }
 
-   //      if(vaild){
-   //          layui.use(['layer'], function(){
-   //              var layer = layui.layer;
-   //              var index = layer.load();
-   //              $.ajax({
-   //               url:validmess,
-   //               data:{code:Forms.V_input},
-   //               dataType:'json',
-		 // type:'post',
-   //               async: false,
-   //               success:function(data){
-   //                   if(data.code==1){
+        if(vaild){
+            layui.use(['layer'], function(){
+                var layer = layui.layer;
+                var index = layer.load();
+                $.ajax({
+                url:validmess,
+                 data:{code:Forms.V_input},
+                dataType:'json',
+		type:'post',
+                async: false,
+                 success:function(data){
+                     if(data.code==1){
                          
-   //                       $(".idcard").css('display','none');
-   //                       $(".Application").css('display','block');
-   //                   }else{
-   //                       layer.msg(data.msg, {'time' : 2000});
+                        $(".idcard").css('display','none');
+                          $(".Application").css('display','block');
+                    }else{
+                         layer.msg(data.msg, {'time' : 2000});
                          
-   //                   }
-   //               }
-   //           });
-   //           layer.close(index);
-   //       });
-        
-       $(".idcard").css('display','none');
-       $(".Application").css('display','block');
+                    }
+                 }
+             });
+             layer.close(index);
+       });
+      
+
             
-        // }else{
-        //     return false;
-        // }
+        }else{
+             return false;
+         }
     });
 //PC端 -- 短信验证
 
