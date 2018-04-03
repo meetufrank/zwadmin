@@ -166,13 +166,13 @@ $(function () {
                          }
                          });
             
-//                         $(".Review").css('display','none');
-//                                $(".idcard").css('display','block');
-//                                $("telVal").text(Forms.tel);
-//
-//                                $("#telVal").text($("#tel").val()); //获取电话号码
-//                                var str = $("#telVal").text();
-//                                $("#telVal").html(str.substring(0,3)+"****"+str.substring(7,11)) //号码加密
+                        // $(".Review").css('display','none');
+                        //        $(".idcard").css('display','block');
+                        //        $("telVal").text(Forms.tel);
+
+                        //        $("#telVal").text($("#tel").val()); //获取电话号码
+                        //        var str = $("#telVal").text();
+                        //        $("#telVal").html(str.substring(0,3)+"****"+str.substring(7,11)) //号码加密
                                 
                      }else{
                          layer.msg('获取签名失败', {'time' : 2000});
@@ -436,36 +436,36 @@ $(function () {
             $(".idcard .main_item .V_input").css('border','1px solid #6aaaf2');
         }
 
-        if(vaild){
-            layui.use(['layer'], function(){
-                var layer = layui.layer;
-                var index = layer.load();
-                $.ajax({
-                 url:validmess,
-                 data:{code:Forms.V_input},
-                 dataType:'json',
-		 type:'post',
-                 async: false,
-                 success:function(data){
-                     if(data.code==1){
+   //      if(vaild){
+   //          layui.use(['layer'], function(){
+   //              var layer = layui.layer;
+   //              var index = layer.load();
+   //              $.ajax({
+   //               url:validmess,
+   //               data:{code:Forms.V_input},
+   //               dataType:'json',
+		 // type:'post',
+   //               async: false,
+   //               success:function(data){
+   //                   if(data.code==1){
                          
-                         $(".idcard").css('display','none');
-                         $(".Application").css('display','block');
-                     }else{
-                         layer.msg(data.msg, {'time' : 2000});
+   //                       $(".idcard").css('display','none');
+   //                       $(".Application").css('display','block');
+   //                   }else{
+   //                       layer.msg(data.msg, {'time' : 2000});
                          
-                     }
-                 }
-             });
-             layer.close(index);
-         });
-//         
-//        $(".idcard").css('display','none');
-//        $(".Application").css('display','block');
+   //                   }
+   //               }
+   //           });
+   //           layer.close(index);
+   //       });
+        
+       $(".idcard").css('display','none');
+       $(".Application").css('display','block');
             
-        }else{
-            return false;
-        }
+        // }else{
+        //     return false;
+        // }
     });
 //PC端 -- 短信验证
 
@@ -526,7 +526,7 @@ $(function () {
             sex : $("#sex").val()
         }
         console.log(Forms);
-        if(valid && Forms.usernameTwo.length <= 3){
+        if(valid && !user(Forms.usernameTwo)){
             valid = false;
             $("#usernameTwo").css('border','1px solid red');
             $("#usernameTwo").focus();
@@ -540,6 +540,14 @@ $(function () {
             $("#sex").focus();
         }else{
             $("#sexM").css('borderColor','#6aaaf2');
+        }
+
+        function user(str){
+            if(/^[a-zA-Z0-9_-]{4,16}$/.test(str)){
+                return true;
+            }else{
+                return false;
+            }
         }
 
         if(valid){
@@ -564,7 +572,7 @@ $(function () {
             usernameTwo : $("#usernameTwo").val(),
             sex : $("#sex").val()
         }
-        if(valid && Forms.usernameTwo.length <= 3){
+        if(valid && !user(Forms.usernameTwo)){
             valid = false;
             $("#usernameTwo").focus();
         }else{
@@ -576,7 +584,13 @@ $(function () {
         }else{
             $("#sexM").css('borderColor','transparent');
         }
-
+        function user(str){
+            if(/^[a-zA-Z0-9_-]{4,16}$/.test(str)){
+                return true;
+            }else{
+                return false;
+            }
+        }
 
         if(valid){
             $(".Application").css('display','none');
