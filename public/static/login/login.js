@@ -81,7 +81,7 @@ $(function () {
             }
         }
         function email(str){
-            if ((/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/.test(str))){
+            if ((/\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}/.test(str))){
                    return true;
                }else{
                    return false;
@@ -623,7 +623,7 @@ $("#Verification").click(function(){
                  async:false,
                  success:function(data){
                      if(data.code==0){
-                         alert('今日发送短信已达到上限');
+                         alert('每天只能获取3次短信');
                      }
                      if(data.code==1){
                          time(verifi);
