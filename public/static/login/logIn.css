@@ -111,6 +111,7 @@ li{
 	display: flex;
 	background-color: #e1edff;
 	flex-direction: column;
+	margin-top:-1px;
 	overflow: hidden;
 }
 .information .main_right.min{
