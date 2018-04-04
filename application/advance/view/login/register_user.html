@@ -119,16 +119,16 @@
                   <input id="usernameTwo" type="text" name="usernameTwo" value="" placeholder="请输入用户名最少4个字符">
                   <i class="icon iconfont icon-yonghu"><span style="color:red;">*</span></i>
                 </div>  
+                
                 <div class="main_item">
-                  <input id="sexM" type="" value="" >
-                  <i class="icon iconfont icon-tijianxingbiefenxi"><span style="color:red;">*</span></i>
-                  <select id="sex" name="sexM" >
-                    <option class="sex"  value="0">请选择性别</option>
-                    <option class="sex" value="1">男</option>
-                    <option class="sex" value="2">女</option>
-                    
-                  </select>
-                </div>
+                  <input readonly id="name" name="name" type="text" placeholder="请选择性别"  style="display: none" />
+                  <div id="nameDiv" class="main_item"><i class="icon iconfont icon-tijianxingbiefenxi"><span style="color:red;">*</span></i>请选择性别</div>
+                   <ul id="nameUl" style="">
+                     <li value="0"  ><i class="icon iconfont icon-tijianxingbiefenxi"><span style="color:red;">*</span></i>请选择性别</li>
+                     <li value="1"><i class="icon iconfont icon-tijianxingbiefenxi"><span style="color:red;">*</span></i>男</li>
+                     <li value="2"><i class="icon iconfont icon-tijianxingbiefenxi"><span style="color:red;">*</span></i>女</li>
+                   </ul>
+               </div>
                 
                 <div class="main_item confirm">
                   <button class="determine" type="button">下一步</button>
@@ -293,5 +293,6 @@
         var jumpurl="{:url('index')}";
     </script>
     <script type="text/javascript" src="{$static_path}/login/login.js"></script>
+
 </body>
 </html>

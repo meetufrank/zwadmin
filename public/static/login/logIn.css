@@ -224,7 +224,7 @@ li{
 .Login .main_text span{
 	padding-left: 50px;
 }
-select{
+/*select{
 	position:absolute;
 	width:100%;
 	top:0;
@@ -246,7 +246,56 @@ select{
 }
 option{
 	padding-left:25px;
+}*/
+
+/* 性别选择 */
+#nameDiv{
+	position: relative;
+	width:100%;
+	text-indent:60px;
+	width:100%;
+	font-size:16px;
+	line-height: 60px;
+	text-indent:60px;
+	border-radius:45px;
+	border:1px solid #6aaaf2;
+
 }
+#nameDiv i{
+	display:block;
+	position:absolute;
+	left:-40px;
+	top:0;
+}
+#nameUl{
+	position: absolute;
+	top:61px;
+	left: 1px;
+	width:100%;
+	margin:auto;
+	height:100%;
+	border-radius:45px;
+	margin-top:-60px;
+	z-index: 9;
+}
+#nameUl li{
+	display:none;
+	width:100%;
+	height:100%;
+	line-height: 60px;
+	background:#fff;
+	text-indent:-30px;
+	text-align: center;
+	background-color: #fff;
+	border:1px solid #3481d0;
+}
+#nameUl li:hover{
+	background-color:#3481d0;
+	color:#fff;
+}
+/* 性别选择 */
+
+
 .main_item .V_input{
     width:100%;
     font-size:12px;
@@ -305,6 +354,7 @@ option{
 		height: 100%;
 		color:#fff;
 	}
+	#nameDiv{border:none;}
 	.main{
 		position: static;
 		height:100%;

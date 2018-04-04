@@ -517,12 +517,26 @@ $(function () {
     });
 //手机端 -- 短信验证
 
+(function(){
+    $("#nameUl").click(function(){
+        $("#nameUl li i").css('display','none');
+         $("#nameUl li").toggle();
+          $("#nameUl li").click(function(){
+          $("#nameUl li i").css('display','block');
+            $("#name").val($(this).val());
+            $("#nameDiv").html($(this).html());
+            console.log($("#name").val());
+          });
+
+      });
+})();
+
 // PC --用户名/性别验证
     $(".Application .main_item button").click(function(){
         var valid = true;
         var Forms = {
             usernameTwo : $("#usernameTwo").val(),
-            sex : $("#sex").val()
+            name : $("#name").val()
         }
         console.log(Forms);
         if(valid && !user(Forms.usernameTwo)){
@@ -533,12 +547,12 @@ $(function () {
             $("#usernameTwo").css('borderColor','#6aaaf2');
 
         }
-        if(valid && Forms.sex <= 0 ){
+        if(valid && Forms.name <= 0 ){
             valid = false;
-            $("#sexM").css('border','1px solid red');
-            $("#sex").focus();
+            $("#nameDiv").css('border','1px solid red');
+            $("#name").focus();
         }else{
-            $("#sexM").css('borderColor','#6aaaf2');
+            $("#nameDiv").css('borderColor','#6aaaf2');
         }
 
         function user(str){
@@ -569,7 +583,7 @@ $(function () {
         var valid = true;
         var Forms = {
             usernameTwo : $("#usernameTwo").val(),
-            sex : $("#sex").val()
+            name : $("#name").val()
         }
         if(valid && !user(Forms.usernameTwo)){
             valid = false;
@@ -577,11 +591,11 @@ $(function () {
         }else{
             $("#usernameTwo").css('borderColor','transparent');
         }
-        if(valid && Forms.sex <=0 ){
+        if(valid && Forms.name <=0 ){
             valid = false;
-            $("select").focus();
+            $("#name").focus();
         }else{
-            $("#sexM").css('borderColor','transparent');
+            $("#nameDiv").css('borderColor','transparent');
         }
         function user(str){
             if(/^[a-zA-Z0-9_-]{4,16}$/.test(str)){
