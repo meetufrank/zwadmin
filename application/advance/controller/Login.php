@@ -54,10 +54,11 @@ class Login extends Controller
             }
            $where=[
                'user_name'=>$userName,
-               'u_status'=>1
+               'u_status'=>1,
+               'delete_time'=>0
            ];
  
-            $user = $chatuser->field('id,user_name,pwd,sign,avatar,is_manager')
+            $user = $chatuser->field('id,user_name,pwd,sign,avatar,is_manager,company')
                 ->where($where)->find();
            
             if(empty($user)){
@@ -67,19 +68,22 @@ class Login extends Controller
             if( md5($pwd) != $user['pwd'] ){
                 return json(['code' => -2, 'data' => '', 'msg' => '密码错误']);
             }
-
+             //查询该用户是否有登录该pp的权限
+             if($user['company']!=9){
+                 return json(['code' => -2, 'data' => '', 'msg' => '您没有登录该网站的权限！']);
+             }
             //设置用户登录
             $chatuser->where('id', $user['id'])->setField('status', 1);
 
             //设置session标识状态
-            cookie('phone_user_name', $user['user_name']);
-            cookie('phone_user_id', $user['id']);
-            cookie('phone_user_sign', $user['sign']);
-            cookie('phone_user_avatar', $user['avatar']);
+            cookie('phone_user_name', $user['user_name'],1800);
+            cookie('phone_user_id', $user['id'],1800);
+            cookie('phone_user_sign', $user['sign'],1800);
+            cookie('phone_user_avatar', $user['avatar'],1800);
             if(!empty(cookie('amback'))){
                 $url= cookie('amback');
             }else{
-                $url=url('/am');
+                $url=url('/Allianz/EMO/En');
             }
             return json(['code' => 1, 'data' => $url, 'msg' => '登录成功']);
         }
