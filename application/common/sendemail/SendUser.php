@@ -4,6 +4,7 @@ use email\Cs;
 use core\cases\logic\ChatUserLogic;
 use think\Queue;
 use core\cases\logic\CompanyLogic;
+error_reporting(E_ERROR | E_PARSE );
 class SendUser
 {
     
